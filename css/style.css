@@ -1,0 +1,225 @@
+@media screen and (min-width: 992px) {
+  *,
+  *::after,
+  *::before {
+    font-family: "Josefin Sans", sans-serif;
+    box-sizing: border-box;
+  }
+  :root {
+    --clr-primary: rgb(54, 112, 199);
+    --clr-light: #f4f4f4;
+    --clr-dark: #333;
+    --clr-warning: rgb(99, 36, 36);
+  }
+
+  body {
+    margin: 0;
+    font-weight: 300;
+    font-size: 1.5rem;
+    background-color: var(--clr-primary);
+    color: var(--clr-light);
+  }
+  .title {
+    text-align: center;
+    font-size: calc(5vw + 2rem);
+    font-weight: 900;
+    color: rgba(0, 0, 0, 0.1);
+    letter-spacing: 2px;
+    margin: -0.3rem 0 0.5rem;
+  }
+
+  button {
+    cursor: pointer;
+    background: 0;
+    border: 0;
+    padding: 0;
+    color: inherit;
+  }
+  .btn.create {
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin-right: 0.25em;
+    transition: opacity 250ms ease-in-out;
+  }
+  .btn.create:hover {
+    opacity: 0.7;
+  }
+  .content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .content-button {
+    width: inherit;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .container-lists {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .ul-lists {
+    text-decoration: circle;
+    align-items: flex-start;
+    line-height: 1.7;
+    font-size: 1.2rem;
+    list-style: circle;
+    padding-left: 1.1em;
+    cursor: pointer;
+  }
+
+  li:hover {
+    transform: scale(1);
+    transition: transform 200ms ease-in-out;
+  }
+  li:hover {
+    transform: scale(1.1);
+  }
+
+  .new {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid currentColor;
+    font-size: inherit;
+    outline: none;
+
+    transition: border-bottom 150ms ease-in;
+  }
+  .new:focus {
+    border-bottom-width: 3px;
+  }
+  .new:focus::placeholder {
+    opacity: 0.2;
+  }
+  .new.list {
+    font-size: 1.1rem;
+    color: #f4f4f4;
+  }
+  .active-list {
+    font-weight: 700;
+  }
+
+  .container-tasks {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    width: 600px;
+    height: auto;
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    border-radius: 20px;
+  }
+  .todo-header {
+    padding: 2rem;
+    display: flex;
+    background: #e4e4e4;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .todo-body {
+    padding: 2rem;
+    color: var(--clr-dark);
+  }
+  .list-title {
+    margin: 0;
+  }
+  .task-count {
+    margin: 0;
+    font-size: 1rem;
+  }
+
+  .todo-body li {
+    padding: 0.5em 0.5em;
+    margin-top: 10px;
+    border: solid 1.5px var(--clr-primary);
+    border-radius: 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  li {
+    list-style: none;
+  }
+  .completed {
+    text-decoration: line-through solid var(--clr-dark);
+  }
+  .selected {
+    background-color: var(--clr-primary);
+    color: var(--clr-light);
+  }
+
+  .add-task-field-btn {
+    margin-top: 20px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .add-task-field-btn input::placeholder {
+    color: var(--clr-primary);
+  }
+  .btns {
+    margin-top: 20px;
+    padding: 10px 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  .btns button {
+    background-color: var(--clr-primary);
+    color: var(--clr-light);
+    border: 2px solid transparent;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 20px;
+    transition: 0.4s;
+    font-size: 0.8rem;
+  }
+
+  .btns button:hover {
+    background-color: var(--clr-light);
+    color: var(--clr-primary);
+    border: 2px solid var(--clr-primary);
+    cursor: pointer;
+  }
+  input::placeholder {
+    color: white;
+    opacity: 0.8;
+  }
+  .delete {
+    background-color: var(--clr-light);
+    color: var(--clr-primary);
+    border: 2px solid transparent;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding: 10px 10px;
+    border-radius: 20px;
+    transition: 0.4s;
+    font-size: 0.8rem;
+  }
+
+  .delete:hover {
+    background-color: var(--clr-primary);
+    color: var(--clr-light);
+    border: 2px solid var(--clr-light);
+    cursor: pointer;
+  }
+
+  .description {
+    text-align: center;
+    width: 50%;
+    font-size: 1rem;
+    font-weight: 200;
+    letter-spacing: 2px;
+    margin-left: 25%;
+  }
+}

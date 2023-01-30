@@ -5,7 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>To Do List - JVD</title>
-    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/mobile-first.css"
+      media="all"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
     <h1 class="title">To Do List</h1>
@@ -22,14 +28,16 @@
           <input
             type="text"
             class="new list"
-            placeholder="Adcione outra lista de tarefas"
+            placeholder="Criar lista"
             aria-label="new list name"
             data-new-list-input
           />
-          <button class="btn create" aria-label="criar nova lista">+</button>
-          <button class="btn delete" data-delete-list-button>
-            excluir lista
-          </button>
+          <div class="content-button">
+            <button class="btn create" aria-label="criar nova lista">+</button>
+            <button class="btn delete" data-delete-list-button>
+              excluir lista
+            </button>
+          </div>
         </form>
       </div>
 
