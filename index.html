@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List - JVD</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 class="title">To Do List</h1>
+    <p class="description">
+      Crie sua lista de tarefas, clique no nome da lista para seleciona-la.
+      Clique duas vezes em um item para marcá-lo como completo. Arraste os itens
+      da lista para alterar a ordem.
+    </p>
+    <div class="content">
+      <div class="container-lists">
+        <h2 class="lists-title">Minhas Listas de Tarefas</h2>
+        <ul class="ul-lists"></ul>
+        <form data-new-list-form action="">
+          <input
+            type="text"
+            class="new list"
+            placeholder="Adcione outra lista de tarefas"
+            aria-label="new list name"
+            data-new-list-input
+          />
+          <button class="btn create" aria-label="criar nova lista">+</button>
+          <button class="btn delete" data-delete-list-button>
+            excluir lista
+          </button>
+        </form>
+      </div>
+
+      <div class="container-tasks" data-list-display-container>
+        <div class="todo-header">
+          <h2 class="list-title" data-list-title>Titulo da Lista</h2>
+          <p class="task-count" data-list-count></p>
+        </div>
+        <div class="todo-body">
+          <ol id="task-list"></ol>
+          <div class="add-task-field-btn">
+            <input
+              class="new task"
+              placeholder="Adcione uma tarefa"
+              aria-label="new task name"
+              type="text"
+              id="text-box"
+            />
+            <button class="btn create" id="criar-tarefa">+</button>
+          </div>
+          <div class="btns">
+            <button id="delete">X</button>
+            <button id="delete-all">Apagar Tudo</button>
+            <button id="remove-completed">Apagar Tarefas Completas</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
